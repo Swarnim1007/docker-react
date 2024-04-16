@@ -7,3 +7,5 @@ before_install:
 
 script: 
   - docker run swarnim1007/docker-react npm run start -- --coverage
+  - travis_wait 30 npm test
+
